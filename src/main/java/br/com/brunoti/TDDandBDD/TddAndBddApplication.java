@@ -14,16 +14,17 @@ public class TddAndBddApplication {
 	}
 
 	public static void resultCalculator() {
-		int i = 10;
-		int j = 5;
+		int valueA = 10;
+		int valueB = 5;
+		String expression = "1+2+3";
 		
 		Calculator calculator = new Calculator();
 
-		System.out.println(calculator.evaluate("1+2+3"));
-		System.out.println(calculator.sum(i, j));
-		System.out.println(calculator.minus(i, j));
-		System.out.println(calculator.multiply(i, j));
-		System.out.println(calculator.division(i, j));
+		System.out.println(calculator.sum(valueA, valueB));
+		System.out.println(calculator.minus(valueA, valueB));
+		System.out.println(calculator.multiply(valueA, valueB));
+		System.out.println(calculator.division(valueA, valueB));
+		System.out.println(calculator.evaluate(expression));
 	}
 
 }

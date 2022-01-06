@@ -26,5 +26,17 @@ public class Calculator {
     public int division(int i, int j) {
         return i / j;
     }
+    
+	public void resultCalculator() {
+		int valueA = 10;
+		int valueB = 5;
+		String expression = "1+2+3";
+		
+		System.out.println(sum(valueA, valueB));
+		System.out.println(minus(valueA, valueB));
+		System.out.println(multiply(valueA, valueB));
+		System.out.println(division(valueA, valueB));
+		System.out.println(evaluate(expression));
+	}
 	
 }
